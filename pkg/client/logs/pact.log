@@ -1,5 +1,5 @@
-I, [2024-01-08T17:28:18.666167 #76295]  INFO -- : Registered expected interaction GET /users/1
-D, [2024-01-08T17:28:18.666419 #76295] DEBUG -- : {
+I, [2024-01-09T13:03:03.272954 #704]  INFO -- : Registered expected interaction GET /users/1
+D, [2024-01-09T13:03:03.273166 #704] DEBUG -- : {
   "description": "User 'Alice' is requested",
   "providerState": "User Alice exists",
   "request": {
@@ -37,20 +37,20 @@ D, [2024-01-08T17:28:18.666419 #76295] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2024-01-08T17:28:18.667112 #76295]  INFO -- : Received request GET /users/1
-D, [2024-01-08T17:28:18.667189 #76295] DEBUG -- : {
+I, [2024-01-09T13:03:03.273807 #704]  INFO -- : Received request GET /users/1
+D, [2024-01-09T13:03:03.273981 #704] DEBUG -- : {
   "path": "/users/1",
   "query": "",
   "method": "get",
   "headers": {
-    "Host": "localhost:40773",
+    "Host": "localhost:37285",
     "User-Agent": "Go-http-client/1.1",
     "Accept-Encoding": "gzip",
     "Version": "HTTP/1.1"
   }
 }
-I, [2024-01-08T17:28:18.667303 #76295]  INFO -- : Found matching response for GET /users/1
-D, [2024-01-08T17:28:18.667351 #76295] DEBUG -- : {
+I, [2024-01-09T13:03:03.274152 #704]  INFO -- : Found matching response for GET /users/1
+D, [2024-01-09T13:03:03.274208 #704] DEBUG -- : {
   "status": 200,
   "headers": {
   },
@@ -69,6 +69,6 @@ D, [2024-01-08T17:28:18.667351 #76295] DEBUG -- : {
     }
   }
 }
-I, [2024-01-08T17:28:18.711827 #76295]  INFO -- : Verifying - interactions matched
-I, [2024-01-08T17:28:18.761694 #76295]  INFO -- : Cleared interactions
-I, [2024-01-08T17:28:18.822225 #76295]  INFO -- : Writing pact for example-server to /home/rachit/projects/contract-test/pkg/client/pacts/example-client-example-server.json
+I, [2024-01-09T13:03:03.323231 #704]  INFO -- : Verifying - interactions matched
+I, [2024-01-09T13:03:03.373340 #704]  INFO -- : Cleared interactions
+I, [2024-01-09T13:03:03.433502 #704]  INFO -- : Writing pact for example-server to /home/rachit/projects/contract-test/pkg/client/pacts/example-client-example-server.json

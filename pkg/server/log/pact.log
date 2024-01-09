@@ -156,3 +156,8 @@ I, [2024-01-08T18:07:46.596546 #86445]  INFO -- : Sending GET request to path: "
 D, [2024-01-08T18:07:46.596566 #86445] DEBUG -- : body :
 I, [2024-01-08T18:07:46.602242 #86445]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"4", "Content-Type"=>"application/json; charset=utf-8", "Date"=>"Mon, 08 Jan 2024 12:37:46 GMT"}, see debug logs for body
 D, [2024-01-08T18:07:46.602299 #86445] DEBUG -- : body: null
+I, [2024-01-09T13:03:03.541336 #714]  INFO -- : Running example 'Verifying a pact between example-client and example-server Given User Alice exists User 'Alice' is requested with GET /users/1 returns a response which has status code 200'
+I, [2024-01-09T13:03:03.542197 #714]  INFO -- : Sending GET request to path: "/users/1" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"User Alice exists"}]}, see debug logs for body
+D, [2024-01-09T13:03:03.542232 #714] DEBUG -- : body :
+I, [2024-01-09T13:03:03.551546 #714]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"50", "Content-Type"=>"application/json; charset=utf-8", "Date"=>"Tue, 09 Jan 2024 07:33:03 GMT"}, see debug logs for body
+D, [2024-01-09T13:03:03.551604 #714] DEBUG -- : body: {"id":"1","firstName":"first1","lastName":"last1"}
