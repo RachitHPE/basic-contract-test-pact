@@ -1,0 +1,50 @@
+{
+  "consumer": {
+    "name": "example-client"
+  },
+  "provider": {
+    "name": "example-server"
+  },
+  "interactions": [
+    {
+      "description": "User 'Alice' is requested",
+      "providerState": "User Alice exists",
+      "request": {
+        "method": "GET",
+        "path": "/users/1",
+        "matchingRules": {
+          "$.path": {
+            "match": "regex",
+            "regex": "\\/users\\/[0-9]+"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "firstName": "Alice",
+          "id": "1",
+          "lastName": "Doe"
+        },
+        "matchingRules": {
+          "$.body.firstName": {
+            "match": "type"
+          },
+          "$.body.id": {
+            "match": "type"
+          },
+          "$.body.lastName": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
